@@ -1,0 +1,494 @@
+@font-face {
+  src: url("/static/fonts/OpenSans-Regular.ttf");
+  font-family: 'Open Sans'; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Open Sans" !important; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+img {
+  max-width: 100%; }
+
+.text-border {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  #todo-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #todo-wrapper #todo-header {
+      background-color: #cccccc;
+      width: 90%;
+      font-weight: lighter;
+      font-size: 2.8vw;
+      padding: 1%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      color: white;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: #cccccc; }
+    #todo-wrapper #todo-list {
+      width: 90%;
+      max-height: 40%;
+      overflow-y: auto; }
+      #todo-wrapper #todo-list .todo-item {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        text-align: center;
+        font-size: 2.5vw;
+        cursor: pointer; }
+        #todo-wrapper #todo-list .todo-item:hover {
+          text-decoration: line-through; }
+      #todo-wrapper #todo-list .empty-todo {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        font-size: 2.5vw;
+        text-align: center;
+        cursor: pointer; }
+    #todo-wrapper #add {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 90%; }
+      #todo-wrapper #add * {
+        border-top-style: none !important; }
+        #todo-wrapper #add *:focus {
+          outline: 0; }
+      #todo-wrapper #add input[type="text"] {
+        border-bottom-left-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #cccccc;
+        background-color: white;
+        padding: 2%;
+        width: 80%;
+        font-size: 2.4vw;
+        border-right-style: none; }
+      #todo-wrapper #add input[type="submit"] {
+        border-bottom-right-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        color: #cccccc;
+        font-weight: lighter;
+        font-size: 2.6vw;
+        cursor: pointer;
+        padding: 2%;
+        width: 21%;
+        margin: 0;
+        background-color: white;
+        border-color: #cccccc;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
+        #todo-wrapper #add input[type="submit"]:hover {
+          background-color: #cccccc;
+          color: white; } }
+
+@media only screen and (min-width: 351px) and (max-width: 600px) {
+  #todo-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #todo-wrapper #todo-header {
+      background-color: #cccccc;
+      width: 80%;
+      font-weight: lighter;
+      font-size: 2.4vw;
+      padding: 1%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      color: white;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: #cccccc; }
+    #todo-wrapper #todo-list {
+      width: 80%;
+      max-height: 40%;
+      overflow-y: auto; }
+      #todo-wrapper #todo-list .todo-item {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        text-align: center;
+        font-size: 2.1vw;
+        cursor: pointer; }
+        #todo-wrapper #todo-list .todo-item:hover {
+          text-decoration: line-through; }
+      #todo-wrapper #todo-list .empty-todo {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        font-size: 2.1vw;
+        text-align: center;
+        cursor: pointer; }
+    #todo-wrapper #add {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 80%; }
+      #todo-wrapper #add * {
+        border-top-style: none !important; }
+        #todo-wrapper #add *:focus {
+          outline: 0; }
+      #todo-wrapper #add input[type="text"] {
+        border-bottom-left-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #cccccc;
+        background-color: white;
+        padding: 2%;
+        width: 80%;
+        font-size: 2vw;
+        border-right-style: none; }
+      #todo-wrapper #add input[type="submit"] {
+        border-bottom-right-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        color: #cccccc;
+        font-weight: lighter;
+        font-size: 2.2vw;
+        cursor: pointer;
+        padding: 2%;
+        width: 21%;
+        margin: 0;
+        background-color: white;
+        border-color: #cccccc;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
+        #todo-wrapper #add input[type="submit"]:hover {
+          background-color: #cccccc;
+          color: white; } }
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+  #todo-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #todo-wrapper #todo-header {
+      background-color: #cccccc;
+      width: 70%;
+      font-weight: lighter;
+      font-size: 2.2vw;
+      padding: 1%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      color: white;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: #cccccc; }
+    #todo-wrapper #todo-list {
+      width: 70%;
+      max-height: 40%;
+      overflow-y: auto; }
+      #todo-wrapper #todo-list .todo-item {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        text-align: center;
+        font-size: 1.8vw;
+        cursor: pointer; }
+        #todo-wrapper #todo-list .todo-item:hover {
+          text-decoration: line-through; }
+      #todo-wrapper #todo-list .empty-todo {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        font-size: 1.8vw;
+        text-align: center;
+        cursor: pointer; }
+    #todo-wrapper #add {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 70%; }
+      #todo-wrapper #add * {
+        border-top-style: none !important; }
+        #todo-wrapper #add *:focus {
+          outline: 0; }
+      #todo-wrapper #add input[type="text"] {
+        border-bottom-left-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #cccccc;
+        background-color: white;
+        padding: 2%;
+        width: 80%;
+        font-size: 1.8vw;
+        border-right-style: none; }
+      #todo-wrapper #add input[type="submit"] {
+        border-bottom-right-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        color: #cccccc;
+        font-weight: lighter;
+        font-size: 2vw;
+        cursor: pointer;
+        padding: 2%;
+        width: 21%;
+        margin: 0;
+        background-color: white;
+        border-color: #cccccc;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
+        #todo-wrapper #add input[type="submit"]:hover {
+          background-color: #cccccc;
+          color: white; } }
+
+@media only screen and (min-width: 851px) and (max-width: 1199px) {
+  #todo-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #todo-wrapper #todo-header {
+      background-color: #cccccc;
+      width: 60%;
+      font-weight: lighter;
+      font-size: 1.7vw;
+      padding: 1%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      color: white;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: #cccccc; }
+    #todo-wrapper #todo-list {
+      width: 60%;
+      max-height: 40%;
+      overflow-y: auto; }
+      #todo-wrapper #todo-list .todo-item {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        text-align: center;
+        font-size: 1.3vw;
+        cursor: pointer; }
+        #todo-wrapper #todo-list .todo-item:hover {
+          text-decoration: line-through; }
+      #todo-wrapper #todo-list .empty-todo {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        font-size: 1.3vw;
+        text-align: center;
+        cursor: pointer; }
+    #todo-wrapper #add {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 60%; }
+      #todo-wrapper #add * {
+        border-top-style: none !important; }
+        #todo-wrapper #add *:focus {
+          outline: 0; }
+      #todo-wrapper #add input[type="text"] {
+        border-bottom-left-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #cccccc;
+        background-color: white;
+        padding: 2%;
+        width: 80%;
+        font-size: 1.3vw;
+        border-right-style: none; }
+      #todo-wrapper #add input[type="submit"] {
+        border-bottom-right-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        color: #cccccc;
+        font-weight: lighter;
+        font-size: 1.5vw;
+        cursor: pointer;
+        padding: 2%;
+        width: 21%;
+        margin: 0;
+        background-color: white;
+        border-color: #cccccc;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
+        #todo-wrapper #add input[type="submit"]:hover {
+          background-color: #cccccc;
+          color: white; } }
+
+@media only screen and (min-width: 1200px) {
+  #todo-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #todo-wrapper #todo-header {
+      background-color: #cccccc;
+      width: 50%;
+      font-weight: lighter;
+      font-size: 1.5vw;
+      padding: 1%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      color: white;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: #cccccc; }
+    #todo-wrapper #todo-list {
+      width: 50%;
+      max-height: 40%;
+      overflow-y: auto; }
+      #todo-wrapper #todo-list .todo-item {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        text-align: center;
+        font-size: 1.1vw;
+        cursor: pointer; }
+        #todo-wrapper #todo-list .todo-item:hover {
+          text-decoration: line-through; }
+      #todo-wrapper #todo-list .empty-todo {
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: #cccccc;
+        border-width: 0.5px;
+        padding: 1%;
+        font-size: 1.1vw;
+        text-align: center;
+        cursor: pointer; }
+    #todo-wrapper #add {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%; }
+      #todo-wrapper #add * {
+        border-top-style: none !important; }
+        #todo-wrapper #add *:focus {
+          outline: 0; }
+      #todo-wrapper #add input[type="text"] {
+        border-bottom-left-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #cccccc;
+        background-color: white;
+        padding: 2%;
+        width: 80%;
+        font-size: 1.1vw;
+        border-right-style: none; }
+      #todo-wrapper #add input[type="submit"] {
+        border-bottom-right-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        color: #cccccc;
+        font-weight: lighter;
+        font-size: 1.3vw;
+        cursor: pointer;
+        padding: 2%;
+        width: 21%;
+        margin: 0;
+        background-color: white;
+        border-color: #cccccc;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease; }
+        #todo-wrapper #add input[type="submit"]:hover {
+          background-color: #cccccc;
+          color: white; } }

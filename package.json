@@ -1,0 +1,21 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "A simple todo list for my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Josue Vinagreiro Fazani",
+  "license": "ISC",
+  "engines": {
+    "node": "10.15.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  }
+}

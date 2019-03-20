@@ -1,0 +1,22 @@
+@import "Default.scss";
+@import "Todo.scss";
+
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  @include todo(90%,2.8vw,2.5vw,2.4vw,2.6vw);
+}
+
+@media only screen and (min-width: 351px) and (max-width: 600px) {
+  @include todo(80%,2.4vw,2.1vw,2vw,2.2vw);
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+  @include todo(70%,2.2vw,1.8vw,1.8vw,2vw);
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1199px) {
+  @include todo(60%,1.7vw,1.3vw,1.3vw,1.5vw);
+}
+
+@media only screen and (min-width: 1200px) {
+  @include todo(50%,1.5vw,1.1vw,1.1vw,1.3vw);
+}

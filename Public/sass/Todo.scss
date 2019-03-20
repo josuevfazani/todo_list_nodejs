@@ -1,0 +1,94 @@
+@mixin todo($w,$title,$todo,$text,$button){
+  #todo-wrapper{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    #todo-header{
+      background-color: $gray;
+      width: $w;
+      font-weight: lighter;
+      font-size: $title;
+      padding: 1%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+      color: white;
+      border-style: solid;
+      border-width: 0.5px;
+      border-color: $gray;
+    }
+    #todo-list{
+      width: $w;
+      max-height: 40%;
+      overflow-y: auto;
+      .todo-item{
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: $gray;
+        border-width: 0.5px;
+        padding: 1%;
+        text-align: center;
+        font-size: $todo;
+        cursor: pointer;
+        &:hover{
+          text-decoration: line-through;
+        }
+      }
+      .empty-todo{
+        background-color: white;
+        border-style: solid;
+        border-top-style: none;
+        border-color: $gray;
+        border-width: 0.5px;
+        padding: 1%;
+        font-size: $todo;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    #add{
+      display: flex;
+      width: $w;
+      *{
+        border-top-style: none!important  ;
+        &:focus{
+          outline: 0;
+        }
+      }
+      input[type="text"]{
+        border-bottom-left-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: $gray;
+        background-color: white;
+        padding: 2%;
+        width: 80%;
+        font-size: $text;
+        border-right-style: none;
+      }
+      input[type="submit"]{
+        border-bottom-right-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        color: $gray;
+        font-weight: lighter;
+        font-size: $button;
+        cursor: pointer;
+        padding: 2%;
+        width: 21%;
+        margin: 0;
+        background-color: white;
+        border-color: $gray;
+        transition: all .5s ease;
+        &:hover{
+          background-color: $gray;
+          color: white;
+        }
+      }
+    }
+  }
+}

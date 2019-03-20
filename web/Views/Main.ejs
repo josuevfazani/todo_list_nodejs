@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Josue Fazani Todo List</title>
+    <link rel="stylesheet" href="/static/css/Index.css">
+  </head>
+  <body>
+    <%# include("./Layouts/popup.ejs")  %>
+    <div id="todo-wrapper">
+      <div id="todo-header">
+          Todo List
+      </div>
+      <div id="todo-list"></div>
+      <div id="add">
+        <input type="text" id="add-todo" name="todo" placeholder="Type a Todo">
+        <input type="submit" id="add-submit" name="submit" value="Confirm">
+      </div>
+    </div>
+  </body>
+  <script src="/static/js/jquery.js" charset="utf-8"></script>
+  <script src="/static/js/getTodos.js" charset="utf-8"></script>
+  <script src="/static/js/addTodo.js" charset="utf-8"></script>
+  <script src="/static/js/deleteTodo.js" charset="utf-8"></script>
+</html>
