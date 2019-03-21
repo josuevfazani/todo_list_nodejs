@@ -25,7 +25,8 @@
 
   //Open the database connection, executes the function from the arguments and closes the connection
   function connect(){
-    mongoose.connect("mongodb+srv://josuevfazani:jojo2407@josuevfazani-kaykh.mongodb.net/node-todo-list?retryWrites=true", {useNewUrlParser: true})
+    //mongoose.connect("mongodb+srv://josuevfazani:jojo2407@josuevfazani-kaykh.mongodb.net/node-todo-list?retryWrites=true", {useNewUrlParser: true})
+    mongoose.connect("mongodb+srv://zinhob888:jojo2407@josuevfazani-wpndl.mongodb.net/test?retryWrites=true", {useNewUrlParser: true})
   }
 
 
