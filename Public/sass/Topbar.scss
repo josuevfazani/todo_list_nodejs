@@ -1,0 +1,13 @@
+@mixin Topbar($font) {
+  #topbar{
+    font-size: $font;
+    background-color: $maincolor;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}

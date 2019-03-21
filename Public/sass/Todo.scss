@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
     #todo-header{
-      background-color: $gray;
+      background-color: $maincolor;
       width: $w;
       font-weight: lighter;
       font-size: $title;
@@ -18,7 +18,7 @@
       color: white;
       border-style: solid;
       border-width: 0.5px;
-      border-color: $gray;
+      border-color: $maincolor;
     }
     #todo-list{
       width: $w;
@@ -28,7 +28,7 @@
         background-color: white;
         border-style: solid;
         border-top-style: none;
-        border-color: $gray;
+        border-color: $maincolor;
         border-width: 0.5px;
         padding: 1%;
         text-align: center;
@@ -42,7 +42,7 @@
         background-color: white;
         border-style: solid;
         border-top-style: none;
-        border-color: $gray;
+        border-color: $maincolor;
         border-width: 0.5px;
         padding: 1%;
         font-size: $todo;
@@ -63,7 +63,7 @@
         border-bottom-left-radius: 10px;
         border-style: solid;
         border-width: 0.5px;
-        border-color: $gray;
+        border-color: $maincolor;
         background-color: white;
         padding: 2%;
         width: 80%;
@@ -74,7 +74,7 @@
         border-bottom-right-radius: 10px;
         border-style: solid;
         border-width: 0.5px;
-        color: $gray;
+        color: $maincolor;
         font-weight: lighter;
         font-size: $button;
         cursor: pointer;
@@ -82,10 +82,10 @@
         width: 21%;
         margin: 0;
         background-color: white;
-        border-color: $gray;
+        border-color: $maincolor;
         transition: all .5s ease;
         &:hover{
-          background-color: $gray;
+          background-color: $maincolor;
           color: white;
         }
       }
