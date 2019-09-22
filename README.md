@@ -1,5 +1,7 @@
 # Todo List
 
+![Project Image](Public/images/ProjectScreenshot.png)
+
 A simple todo list developed with [Node.js](https://nodejs.org/en/), [MongoDB](https://www.mongodb.com/) and deployed at [Heroku](https://www.heroku.com/).
 
 The following Node.js modules where used:
